@@ -22,8 +22,9 @@ int main(int argc, char **argv)
 	nmh::Galaxy g(1);
 	nmh::Star s = g.ExploreStar(0, 0, 0);
 	nmh::System sy(s.seed);
+	nmh::Planet p = sy.ExplorePlanet(sy.GetNumPlanets() - 1);
 
-	sprintf(line, "Galaxy %lu\n System %lu at %u:%u (%u,%u)\n  Planets %u", g.GetSeed(), s.seed, 0, 0, s.localX, s.localY, sy.GetNumPlanets());
+	sprintf(line, "Galaxy %lu\n System %lu at %u:%u (%u,%u)\n  Planets %u\n  Planet %lu\n   Radius %lu", g.GetSeed(), s.seed, 0, 0, s.localX, s.localY, sy.GetNumPlanets(), p.Seed, p.Radius);
 
 	while (aptMainLoop())
 	{

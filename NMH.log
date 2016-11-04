@@ -2,6 +2,11 @@
   arm-none-eabi-g++ -MMD -MP -MF /c/sandbox/projects/NMH/build/Galaxy.d -g -Wall -O2 -mword-relocations -fomit-frame-pointer -ffast-math -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/c/sandbox/projects/NMH/include -I/c/devkitPro/libctru/include -I/c/devkitPro/portlibs/armv6k/include -I/c/devkitPro/portlibs/3ds/include -I/c/sandbox/projects/NMH/build -DARM11 -D_3DS   -fno-rtti -fno-exceptions -std=gnu++11 -c /c/sandbox/projects/NMH/source/Galaxy.cpp -o Galaxy.o 
   Program.cpp
   arm-none-eabi-g++ -MMD -MP -MF /c/sandbox/projects/NMH/build/Program.d -g -Wall -O2 -mword-relocations -fomit-frame-pointer -ffast-math -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/c/sandbox/projects/NMH/include -I/c/devkitPro/libctru/include -I/c/devkitPro/portlibs/armv6k/include -I/c/devkitPro/portlibs/3ds/include -I/c/sandbox/projects/NMH/build -DARM11 -D_3DS   -fno-rtti -fno-exceptions -std=gnu++11 -c /c/sandbox/projects/NMH/source/Program.cpp -o Program.o 
+  c:/sandbox/projects/NMH/source/Program.cpp: In function 'int main(int, char**)':
+  c:/sandbox/projects/NMH/source/Program.cpp:27:186: warning: format '%lu' expects argument of type 'long unsigned int', but argument 11 has type 'int' [-Wformat=]
+    sprintf(line, "Galaxy %lu\n System %lu at %u:%u (%u,%u)\n  Planets %u\n  Planet %lu\n   Radius %lu", g.GetSeed(), s.seed, 0, 0, s.localX, s.localY, sy.GetNumPlanets(), p.Seed, p.Radius);
+                                                                                                                                                                                            ^
+  c:/sandbox/projects/NMH/source/Program.cpp:27:186: warning: format '%lu' expects argument of type 'long unsigned int', but argument 11 has type 'int' [-Wformat=]
   System.cpp
   arm-none-eabi-g++ -MMD -MP -MF /c/sandbox/projects/NMH/build/System.d -g -Wall -O2 -mword-relocations -fomit-frame-pointer -ffast-math -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/c/sandbox/projects/NMH/include -I/c/devkitPro/libctru/include -I/c/devkitPro/portlibs/armv6k/include -I/c/devkitPro/portlibs/3ds/include -I/c/sandbox/projects/NMH/build -DARM11 -D_3DS   -fno-rtti -fno-exceptions -std=gnu++11 -c /c/sandbox/projects/NMH/source/System.cpp -o System.o 
   linking NMH.elf

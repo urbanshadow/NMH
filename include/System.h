@@ -24,12 +24,13 @@ namespace nmh {
 	class System :
 		public ProceduralContent<u32>
 	{
-		Planet ExplorePlanet(u8 planet);
-		Moon ExploreMoon(u8 moon);
+		
 		u16 details;
 		Planet *planets;
 		Moon *moons;
 	public:
+		Planet ExplorePlanet(u8 planet);
+		Moon ExploreMoon(u8 moon);
 		System(u32 seed);
 		virtual ~System();
 		u8 GetNumPlanets();
