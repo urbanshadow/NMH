@@ -1,1 +1,8 @@
-﻿  clean ...
+﻿  Galaxy.cpp
+  arm-none-eabi-g++ -MMD -MP -MF /c/sandbox/projects/NMH/build/Galaxy.d -g -Wall -O2 -mword-relocations -fomit-frame-pointer -ffast-math -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/c/sandbox/projects/NMH/include -I/c/devkitPro/libctru/include -I/c/devkitPro/portlibs/armv6k/include -I/c/devkitPro/portlibs/3ds/include -I/c/sandbox/projects/NMH/build -DARM11 -D_3DS   -fno-rtti -fno-exceptions -std=gnu++11 -c /c/sandbox/projects/NMH/source/Galaxy.cpp -o Galaxy.o 
+  Program.cpp
+  arm-none-eabi-g++ -MMD -MP -MF /c/sandbox/projects/NMH/build/Program.d -g -Wall -O2 -mword-relocations -fomit-frame-pointer -ffast-math -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/c/sandbox/projects/NMH/include -I/c/devkitPro/libctru/include -I/c/devkitPro/portlibs/armv6k/include -I/c/devkitPro/portlibs/3ds/include -I/c/sandbox/projects/NMH/build -DARM11 -D_3DS   -fno-rtti -fno-exceptions -std=gnu++11 -c /c/sandbox/projects/NMH/source/Program.cpp -o Program.o 
+  System.cpp
+  arm-none-eabi-g++ -MMD -MP -MF /c/sandbox/projects/NMH/build/System.d -g -Wall -O2 -mword-relocations -fomit-frame-pointer -ffast-math -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/c/sandbox/projects/NMH/include -I/c/devkitPro/libctru/include -I/c/devkitPro/portlibs/armv6k/include -I/c/devkitPro/portlibs/3ds/include -I/c/sandbox/projects/NMH/build -DARM11 -D_3DS   -fno-rtti -fno-exceptions -std=gnu++11 -c /c/sandbox/projects/NMH/source/System.cpp -o System.o 
+  linking NMH.elf
+  built ... NMH.3dsx
