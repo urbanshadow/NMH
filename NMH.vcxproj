@@ -92,11 +92,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Galaxy.cpp" />
+    <ClCompile Include="source\GameManager.cpp" />
+    <ClCompile Include="source\ManagerFactory.cpp" />
     <ClCompile Include="source\Program.cpp" />
     <ClCompile Include="source\System.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Galaxy.h" />
+    <ClInclude Include="include\GameManager.h" />
+    <ClInclude Include="include\Manager.h" />
+    <ClInclude Include="include\ManagerFactory.h" />
     <ClInclude Include="include\ProceduralContent.h" />
     <ClInclude Include="include\System.h" />
   </ItemGroup>
